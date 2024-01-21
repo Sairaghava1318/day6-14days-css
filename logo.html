@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sairaghava</title>
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background: linear-gradient(to bottom, #3498db, #2c3e50); 
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        #content {
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #image-container {
+            position: relative;
+            margin-right: 20px; 
+        }
+
+        #image {
+            max-width: 200px;
+            max-height: 200px;
+            border-radius: 8px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        }
+
+        #text-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        #logo {
+            font-size: 3em;
+            font-weight: bold;
+            letter-spacing: 5px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            margin-bottom: 10px;
+        }
+
+        #slogan {
+            font-size: 1.2em;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        #image-container:hover #hover-text {
+            opacity: 1;
+            top: -170px;
+        }
+
+        #text-container:hover #logo {
+            text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.8);
+        }
+
+        #text-container:hover #slogan {
+            opacity: 1;
+        }
+
+        .top {
+            position: absolute;
+            top: 10px; 
+            font-size: 50px;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .button {
+            display: flex;
+            text-align: center;
+            line-height: 50px; 
+            font-size: 18px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 400;
+            border: 3px solid #15f4ee;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            cursor: pointer;
+            border-radius: 50px;
+            background-color: white;  
+            transition: box-shadow 1.5s;
+            margin: 0 10px;
+            position: relative;
+        }
+
+        .button:hover {
+            box-shadow: 0 5px 50px 0 #15f4ee inset, 0 5px 50px #15f4ee;
+        }
+
+        #buttons {
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px; 
+        }
+        .clock {
+            position: absolute;
+            top: 455px;
+            left: 850px;
+             color: #15f4ee;
+
+             }
+        .button-text { 
+            position: absolute;
+            top: 455px;
+            left: 1130px;
+            color: #15f4ee; }
+        .hospital {
+            position: absolute;
+            top: 455px;
+            left: 1270px; 
+            color: #15f4ee; }
+        .illusion { position: absolute;
+            top: 455px;
+            left: 985px;
+            color: #15f4ee; }
+        .home { 
+            position: absolute;
+            top: 455px;
+            left: 720px;
+            color: #15f4ee; }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <div id="image-container">
+            <img id="image" src="sanji.jpg" alt="One Piece Sanji">
+            <div id="hover-text">One Piece Sanji</div>
+        </div>
+        <div id="text-container">
+            <div id="logo">Sairaghava</div>
+            <div id="slogan">I am a web development enthusiast</div>
+        </div>
+    </div>
+    <div class="top">My Logo</div>
+    <div id="buttons">
+        <button onclick="window.location.href='index.html'" class="button">Home</button>
+        <button onclick="window.location.href='clock.html'" class="button">Clock</button>
+        <button onclick="window.location.href='illusion.html'" class="button">Illusion</button>
+        <button onclick="window.location.href='button.html'" class="button">Button</button>
+        <button onclick="window.location.href='hospital.html'" class="button">Hospital</button>
+    </div>
+    <section class="text">
+        <div class="clock">day1</div>
+        <div class="button-text">day2</div>
+        <div class="hospital">day3</div>
+        <div class="illusion">day4</div>
+        <div class="home">day5&6</div>
+    </section>
+</body>
+</html>
